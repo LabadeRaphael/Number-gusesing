@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.css">
+    <script src="Number Guessing.js"></script>
+</head>
+<body onload="loadNumber()" class="shadow-lg bg-danger">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 col-12 mx-auto shadow p-3 mt-lg-5 rounded-5 bg-danger">
+                <div class="d-flex justify-content-between bg-danger">
+                    <small class="text-center fw-bold text-light ms-3" style="font-family: cursive;">NUMBER GUSSER</small>
+                    <div class="d-flex me-2">
+                        <img src="suit-heart.svg" alt="">
+                        <small class="text-light fw-bold" id="lifeCount"></small>
+                    </div>
+                </div>
+                <div class="bg-light mb-3 pt-3 ps-3" style="min-height: 250px;">
+                    <div class="text-danger fw-bold mb-3"style="font-family: cursive;">Guess a number from 0-10</div>
+                    <small class="text-center fw-bold text-danger mx-auto d-block" style="font-family: cursive;" id="emptyInput"></small>
+                    <input type="number" class="form-control w-75 mx-auto p-3 text-center"  id="userInput">
+                    <small class="text-center btn  btn-sm btn-outline-warning text-danger w-25 fw-bold mx-auto d-block mt-4" style="font-family: cursive;" onclick="guess()">Guess</small>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
